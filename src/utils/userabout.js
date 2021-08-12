@@ -3,7 +3,7 @@
 //第一步:先从localStorage中获取,如果没有
 //第二步:在调用uuid创建心的,并且还要存储到localStoragage
 import {v4 as uuidv4} from 'uuid'
-function getUserTempId(params) {
+function getUserTempId() {
   let userTempId = localStorage.getItem('USERTEMPID_KEY')
   if (!userTempId) {
     userTempId = uuidv4();   //自动创建一个id字符串
